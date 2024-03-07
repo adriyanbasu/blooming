@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 	"text/scanner"
-	"strconv"
 )
 
 type TokenType int
@@ -59,7 +59,7 @@ func determineTokenType(tokenLiteral string) TokenType {
 
 func isKeyword(token string) bool {
 	// Example: check if token is a keyword in your language
-	keywords := []string{"let", "if", "else", "for", "while", "func", "return", "true", "false", "nil","and", "or","const","var","struct","int","float" }
+	keywords := []string{"let", "if", "else", "for", "while", "func", "return", "true", "false", "nil", "and", "or", "const", "var", "struct", "int", "float"}
 	for _, kw := range keywords {
 		if token == kw {
 			return true
