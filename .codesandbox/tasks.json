@@ -9,7 +9,11 @@
       "command": "go run main.go",
       "runAtStart": true,
       "restartOn": {
-        "files": ["./main.go"]
+        "files": [
+          "./main.go"
+        ],
+        "branch": false,
+        "resume": false
       }
     }
   }
